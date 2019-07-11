@@ -44,6 +44,7 @@ WHERE CustomerName LIKE '_r%'	| Finds any values that have "r" in the second pos
 WHERE CustomerName LIKE 'a__%' | 	Finds any values that start with "a" and are at least 3 characters in length
 WHERE ContactName LIKE 'a%o'	 | Finds any values that start with "a" and ends with "o"
 
+REGEX operator saves a lot of time and can be very tricky some times to use it, you can refer [this](https://www.rexegg.com/regex-quickstart.html#quantifiers),[this](https://www.geeksforgeeks.org/mysql-regular-expressions-regexp/) sites for great source materials. 
 
 ## MySQL String Functions
 **Function**	 | **Description**
