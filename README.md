@@ -1,5 +1,5 @@
 # SQL
-This repository contains the [**SQL**](https://en.wikipedia.org/wiki/MySQL) queries I am writing using [**MYSQL**](https://www.w3schools.com/sql/sql_intro.asp) database language in  [**hackerrank**](https://www.hackerrank.com/domains/sql) for the problems. I will update my repository time to time , and adding resources. 
+This repository contains the [**SQL**](https://en.wikipedia.org/wiki/MySQL) queries I am writing using [**MYSQL**](https://www.w3schools.com/sql/sql_intro.asp) database language in  [**hackerrank**](https://www.hackerrank.com/domains/sql). I will update my repository time to time , and add relavent resources. 
 
 I'm also writing down some important syntaxes for SQL over here in this **README**, so it might be useful for quick reference.
 You can also refer [this](https://www.w3schools.com/sql) site for understanding SQL quickly, as I will be summarizing all syntaxes here using that various resources and my experience of writing queries as reference. Feel free to suggest me any changes in the content through my mail neerajsirvisetti@gmail.com or you can make me your connection on [**LinkedIN**](https://www.linkedin.com/in/neeraj-sirvisetti/).
