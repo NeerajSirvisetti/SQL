@@ -44,7 +44,28 @@ WHERE CustomerName LIKE '_r%'	| Finds any values that have "r" in the second pos
 WHERE CustomerName LIKE 'a__%' | 	Finds any values that start with "a" and are at least 3 characters in length
 WHERE ContactName LIKE 'a%o'	 | Finds any values that start with "a" and ends with "o"
 
-REGEX operator saves a lot of time and can be very tricky some times to use it, you can refer [this](https://www.rexegg.com/regex-quickstart.html#quantifiers),[this](https://www.geeksforgeeks.org/mysql-regular-expressions-regexp/) sites for great source materials. 
+**REGEX operator** saves a lot of time and can be very tricky some times to use it, you can refer [this](https://www.rexegg.com/regex-quickstart.html#quantifiers),[geekforgeeks](https://www.geeksforgeeks.org/mysql-regular-expressions-regexp/) sites for great source materials.
+*RLIKE* is the synonym.It also supports a number of metacharacters which allow more flexibility and control when performing pattern matching.The backslash is used as an escape character. It’s only considered in the pattern match if double backslashes have used.
+Not case sensitive.
+
+**PATTERN**	| **WHAT THE PATTERN MATCHES**
+------------ | ------------- 
+| *	| Zero or more instances of string preceding it
+| +	| One or more instances of strings preceding it
+| .	| Any single character
+?	| Match zero or one instances of the strings preceding it.
+^	| caret(^) matches Beginning of string
+$	| End of string
+[abc] |	Any character listed between the square brackets
+[^abc]	| Any character not listed between the square brackets
+[A-Z]	| match any upper case letter.
+[a-z]	| match any lower case letter
+[0-9]	| match any digit from 0 through to 9.
+[[:<:]]	| matches the beginning of words.
+[[:>:]]	| matches the end of words.
+[:class:]	| matches a character class i.e. [:alpha:] to match letters, [:space:] to match white space, [:punct:] is match punctuations and [:upper:] |for upper class letters.
+{n}	n | instances of preceding element
+{m,n}	| m through n instances of preceding element
 
 ## MySQL String Functions
 **Function**	 | **Description**
