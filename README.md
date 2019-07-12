@@ -30,6 +30,20 @@ You can also refer [this](https://www.w3schools.com/sql) site for understanding 
   AS | SELECT *column_name* AS *alias_name* FROM *table_name*; | SQL aliases are used to give a table, or a column in a table, a temporary name.
    AS   | SELECT *column_name(s)* FROM *table_name* AS *alias_name*;  |
  GROUP BY | SELECT *column_name(s)* FROM *table_name *WHERE *condition* GROUP BY *column_name(s)* ORDER BY *column_name(s)*; | The GROUP BY statement group rows that have the same values into summary rows.
+ 
+ **CASE** , this is like an if , else statements we find in other programming languages.
+
+Syntax:
+ 
+ CASE
+    WHEN *condition1* THEN *result1*
+    WHEN *condition2* THEN *result2*
+    WHEN *conditionN* THEN *resultN*
+    ELSE *result*
+END; 
+
+The CASE statement goes through conditions and returns a value when the first condition is met (like an IF-THEN-ELSE statement). So, once a condition is true, it will stop reading and return the result. If no conditions are true, it returns the value in the ELSE clause. 
+If there is no ELSE part and no conditions are true, it returns NULL.
   
 There are two wildcards often used in conjunction with the LIKE operator:
 1. % - The percent sign represents zero, one, or multiple characters
