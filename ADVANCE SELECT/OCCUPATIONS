@@ -1,0 +1,18 @@
+SET @d = 0, @p = 0, @s = 0, @a = 0;
+
+SELECT MIN(Doctor), MIN(Professor), MIN(Singer), MIN(Actor)
+FROM (
+    SELECT  CASE Occupation    
+                WHEN 'Doctor'       THEN @d := @d + 1
+                WHEN 'Professor'    THEN @p := @p + 1
+                WHEN 'Singer'       THEN @s:= @s + 1
+                WHEN 'Actor'        THEN @a := @a + 1
+            END AS row,
+            IF (Occupation = 'Doctor', Name, NULL) AS Doctor,
+            IF (Occupation = 'Professor', Name, NULL) AS Professor,
+            IF (Occupation = 'Singer', Name, NULL) AS Singer,
+            IF (Occupation = 'Actor', Name, NULL) AS Actor
+    FROM    OCCUPATIONS
+    ORDER BY Name
+) temp
+GROUP BY row;
