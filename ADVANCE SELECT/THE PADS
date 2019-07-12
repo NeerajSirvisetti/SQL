@@ -1,0 +1,5 @@
+```mysql
+select concat(Name,'(',LEFT(occupation,1),')') as Namefrom occupations ORDER BY NAME;
+select concat("There are a total of ",' ',count(occupation),' ',LOWER(occupation),'s.') 
+from occupations GROUP BY OCCUPATION ORDER BY COUNT(occupation),occupation;
+```
